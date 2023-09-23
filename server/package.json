@@ -18,7 +18,8 @@
     "express": "^4.18.2",
     "express-jwt": "^8.4.1",
     "jsonwebtoken": "^9.0.2",
-    "socket.io": "^4.7.2"
+    "socket.io": "^4.7.2",
+    "vercel": "^32.3.1"
   },
   "devDependencies": {
     "install": "^0.13.0",
