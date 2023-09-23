@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon server/index.js",
     "start": "node index.js",
-    "postinstall": "prisma generate"
+    "vercel-build": "prisma generate && prisma migrate deploy"
   },
   "keywords": [],
   "author": "",
