@@ -1,0 +1,22 @@
+/** @type {import('tailwindcss').Config} */
+import daisyui from 'daisyui'
+
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      scrollbarGutter: {
+        auto: 'auto',
+        stable: 'stable'
+      }
+    },
+  },
+  plugins: [daisyui],
+  daisyui: {
+    themes: ["emerald"],
+  },
+}
+
