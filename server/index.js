@@ -25,6 +25,12 @@ const app = express()
 
 app.use(morgan('dev'))
 
+app.get("/", (_req, res) => {
+  res.json({
+    name: "chat-react-express"
+  });
+});
+
 app.all(
   '/*',
   expressjwt({ secret: process.env.SECRET, algorithms: ['HS256'] }).unless({
