@@ -55,7 +55,7 @@ app.use((err, _, res, next) => {
 const server = createServer(app)
 const io = new SocketServer(server, {
   cors: {
-    origin: "http://127.0.0.1:5173"
+    origin: process.env.FRONTEND_URI
   }
 })
 

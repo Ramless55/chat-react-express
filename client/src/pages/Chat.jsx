@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar';
 import { postMessage, getAllMessages } from '../services/axiosServices-messages';
 
-const socket = io("http://localhost:4000")
+const socket = io(import.meta.env.VITE_URI)
 
 function Chat () {
   const [message, setMessage] = useState("")
